@@ -10,11 +10,49 @@ namespace CalculatorConsoleApp
     {
         static void Main(string[] args)
         {
-            int a = 42;
-            int b = 119;
-            int c = a + b;
+            // Variable Definitions while values are assigned to zero
+            int numb1 = 0;
+            int numb2 = 0;
 
-            Console.WriteLine(c);
+            // Display the title as the C# Console calculator app
+            Console.WriteLine("Console Calculator written in C#\r");
+            Console.WriteLine("--------------------------------\n");
+
+            // Prompt the user to type in their first number
+            Console.WriteLine("Please enter a number: ");
+            numb1 = Convert.ToInt32(Console.ReadLine());
+
+            // Prompt the user to type in their second number
+            Console.WriteLine("Please enter another number: ");
+            numb2 = Convert.ToInt32(Console.ReadLine());
+
+            // Prompt the user to select an option
+            Console.WriteLine("Select an option from the following list below:");
+            Console.WriteLine("\t+ - Add");
+            Console.WriteLine("\t- - Subtract");
+            Console.WriteLine("\t* - Multiply");
+            Console.WriteLine("\t/ - Divide");
+            Console.Write("Your option?: ");
+
+            // Switch statment for doing the calculation
+            switch (Console.ReadLine())
+            {
+                case "+":
+                    Console.WriteLine($"Result: {numb1} + {numb2} = " + (numb1 + numb2));
+                    break;
+                case "-":
+                    Console.WriteLine($"Result: {numb1} - {numb2} = " + (numb1 - numb2));
+                    break;
+                case "*":
+                    Console.WriteLine($"Result: {numb1} * {numb2} = " + (numb1 * numb2));
+                    break;
+                case "/":
+                    Console.WriteLine($"Result: {numb1} / {numb2} = " + (numb1 / numb2));
+                    break;
+            }
+
+            // Wait for user to respond before closing the application
+            Console.Write("\nPress any key to close the application...");
             Console.ReadKey();
         }
     }
