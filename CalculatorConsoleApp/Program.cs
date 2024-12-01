@@ -11,8 +11,8 @@ namespace CalculatorConsoleApp
         static void Main(string[] args)
         {
             // Variable Definitions while values are assigned to zero
-            float numb1 = 0;
-            float numb2 = 0;
+            double numb1 = 0;
+            double numb2 = 0;
 
             // Display the title as the C# Console calculator app
             Console.WriteLine("Console Calculator written in C#\r");
@@ -20,11 +20,11 @@ namespace CalculatorConsoleApp
 
             // Prompt the user to type in their first number
             Console.WriteLine("Please enter a number: ");
-            numb1 = Convert.ToInt32(Console.ReadLine());
+            numb1 = Convert.ToDouble(Console.ReadLine());
 
             // Prompt the user to type in their second number
             Console.WriteLine("Please enter another number: ");
-            numb2 = Convert.ToInt32(Console.ReadLine());
+            numb2 = Convert.ToDouble(Console.ReadLine());
 
             // Prompt the user to select an option
             Console.WriteLine("Select an option from the following list below:");
