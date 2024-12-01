@@ -11,8 +11,8 @@ namespace CalculatorConsoleApp
         static void Main(string[] args)
         {
             // Variable Definitions while values are assigned to zero
-            int numb1 = 0;
-            int numb2 = 0;
+            float numb1 = 0;
+            float numb2 = 0;
 
             // Display the title as the C# Console calculator app
             Console.WriteLine("Console Calculator written in C#\r");
