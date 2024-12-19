@@ -47,6 +47,12 @@ namespace CalculatorConsoleApp
                     Console.WriteLine($"Result: {numb1} * {numb2} = " + (numb1 * numb2));
                     break;
                 case "/":
+                    // Ask the user to enter a non-zero divisor until they do so.
+                    while (numb2 == 0)
+                    {
+                        Console.WriteLine("Enter a non-zero divisor: ");
+                        numb2 = Convert.ToDouble(Console.ReadLine());
+                    }
                     Console.WriteLine($"Result: {numb1} / {numb2} = " + (numb1 / numb2));
                     break;
             }
